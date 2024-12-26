@@ -1,0 +1,170 @@
+Assignment
+
+
+1: List the Operators in Java:
+Answer: Java provides the following categories of operators:
+
+Arithmetic Operators: +, -, *, /, %
+Relational Operators: ==, !=, <, >, <=, >=
+Logical Operators: &&, ||, !
+Bitwise Operators: &, |, ^, ~, <<, >>, >>>
+Assignment Operators: =, +=, -=, *=, /=, %=
+Unary Operators: +, -, ++, --, !
+Ternary Operator: ? :
+Instanceof Operator: Checks if an object is an instance of a class.
+
+
+
+2: Explain about Increment and Decrement operators and give an example:
+Answer:
+
+Increment Operator (++): Increases a variable's value by 1.
+
+Pre-increment (++var): Increments the value, then uses it.
+Post-increment (var++): Uses the value, then increments it.
+Decrement Operator (--): Decreases a variable's value by 1.
+
+Pre-decrement (--var): Decrements the value, then uses it.
+Post-decrement (var--): Uses the value, then decrements it.
+
+
+Example:
+java
+Copy code
+int x = 5;  
+System.out.println(++x); // Pre-increment: Outputs 6, x becomes 6  
+System.out.println(x--); // Post-decrement: Outputs 6, x becomes 5  
+
+
+
+3: What are the Conditional Operators in Java?
+
+Answer: Conditional operators are used to perform conditional operations:
+
+Ternary Operator (? :): Acts as a shorthand for if-else.
+Syntax: condition ? expression1 : expression2
+
+
+Example:
+java
+Copy code
+int a = 10, b = 20;  
+int max = (a > b) ? a : b; // max is 20  
+4: What are the types of operators based on the number of operands?
+
+Answer: Based on the number of operands, operators are classified into:
+
+Unary Operators: Operate on one operand (e.g., ++, --, !).
+Binary Operators: Operate on two operands (e.g., +, -, *, /).
+Ternary Operator: Operates on three operands (condition ? trueExpr : falseExpr).
+
+
+5: What are the conditional statements and use of conditional statements in Java?
+
+Answer:
+Conditional Statements: These are used to execute code blocks based on a condition.
+
+if Statement: Executes code if the condition is true.
+if-else Statement: Executes one block if the condition is true, another if false.
+else-if Ladder: Tests multiple conditions sequentially.
+switch Statement: Executes one code block from many based on a matching case.
+Use: Control the flow of execution in a program based on conditions.
+
+
+6: What is the syntax of if-else statement?
+
+
+Answer:
+
+java
+Copy code
+if (condition) {
+    // Block of code if condition is true
+} else {
+    // Block of code if condition is false
+}
+Example:
+
+java
+Copy code
+int num = 10;  
+if (num % 2 == 0) {  
+    System.out.println("Even");  
+} else {  
+    System.out.println("Odd");  
+}  
+
+
+7: What are the 3 types of iterative statements in Java?
+Answer:
+
+for Loop: Executes a block of code a fixed number of times.
+Syntax:
+
+java
+Copy code
+for (initialization; condition; update) {
+    // Code to execute
+}
+while Loop: Executes a block of code as long as a condition is true.
+Syntax:
+
+java
+Copy code
+while (condition) {
+    // Code to execute
+}
+do-while Loop: Executes a block of code at least once, then repeats as long as a condition is true.
+Syntax:
+
+java
+Copy code
+do {
+    // Code to execute
+} while (condition);
+
+
+
+
+8: What do you mean by an Array?
+Answer: An array is a collection of elements of the same type stored at contiguous memory locations.
+ It is used to store multiple values under a single variable name.
+
+
+
+9: How to create an Array?
+Answer:
+Syntax:
+
+java
+Copy code
+datatype[] arrayName = new datatype[size];
+Example:
+
+java
+Copy code
+int[] numbers = new int[5];  
+numbers[0] = 10;  
+numbers[1] = 20;  
+// And so on...
+
+
+
+10: State the difference between StringBuffer and StringBuilder in Java:
+Answer:
+
+Feature	StringBuffer	StringBuilder
+Thread-Safety	Thread-safe (synchronized).	Not thread-safe.
+Performance	Slower due to synchronization.	Faster, as it is not synchronized.
+Usage	Used in multithreaded environments.	Used in single-threaded environments.
+Example:
+
+java
+Copy code
+StringBuffer sb1 = new StringBuffer("Hello ");  
+sb1.append("World");  
+System.out.println(sb1);  
+
+StringBuilder sb2 = new StringBuilder("Hello ");  
+sb2.append("World");  
+System.out.println(sb2);  
